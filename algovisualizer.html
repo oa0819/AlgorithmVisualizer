@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="algovisualizer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="gen_arr()">
+    <nav>
+        <h1 id="heading">SORTING VISUALIZER</h1>
+        <div class="getinfo">
+            <p>SPEED OF ALGORITHM</p>
+            <input type="range" min="1" class="rangeslider" max="5" step="1" id="algo_speed" value="4">
+            <p>SIZE OF ARRAY</p>
+            <input type="range" min="5" class="rangeslider" max="100" step="1" id="a_size" value="10">
+
+        </div>
+        <div></div>
+        <ul>
+            <li><button class="algos">Bubble</button></li>
+            <li><button class="algos">Selection</button></li>
+            <li><button class="algos">Insertion</button></li>
+            <li><button class="algos">Merge</button></li>
+            <li><button class="algos">Quick</button></li>
+            <li><button class="algos">Heap</button></li>
+        </ul>
+        <div id="btn">
+            <button id="btn2">GENERATE NEW ARRAY!</button>
+        </div>
+    </nav>
+    <section>
+        <div id="fcont"></div>
+        <div id="bars">
+            
+        </div>
+        <div id="scont"></div>
+    </section>
+
+    <script src="algovisualizer.js"></script>
+    <script src="bubblesort.js"></script>
+    <script src="selectionsort.js"></script>
+    <script src="insertion.js"></script>
+    <script src="mergesort.js"></script>
+    <script src="quicksort.js"></script>
+    <script src="heapsort.js"></script>
+</body>
+
+</html>
